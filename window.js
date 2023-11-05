@@ -17,14 +17,14 @@ function reset(){
     Math.sign(d.getTimezoneOffset()) == -1 ? c('tid').selectedIndex = 0 : c('tid').selectedIndex = 1
     c('out').value=""
     c('incTime').selectedIndex=0
-    c('incRel').selectedIndex=0
+    c('mode').selectedIndex=0
 }
 
 function getTS(){return Math.floor(Date.parse(`${a('day')} ${b('month')} ${a('year')} ${a('hour')}:${a('minute')}:00 UTC${b('tid')}${a('time')}`)/1000)}
 function getMSG(){
-    if(b('incRel') == 1){
-        return `${a('event')} ${a('at')} <t:${getTS()}:${b('incTime')}>, <t:${getTS()}:R>`
-    } else {
-        return `${a('event')} ${a('at')} <t:${getTS()}:${b('incTime')}>`
+    switch(b('mode')){
+        case '0': return `${a('event')} ${a('at')} <t:${getTS()}:${b('incTime')}>, <t:${getTS()}:R>`
+        case '1': return `${a('event')} ${a('at')} <t:${getTS()}:${b('incTime')}>`
+        case '2': return `${a('event')} ${a('at')} <t:${getTS()}:R>`
     }
 }
