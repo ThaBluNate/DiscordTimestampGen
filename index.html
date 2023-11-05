@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Event timestamp generator</title>
+		<link rel="stylesheet" href="window.css" media="all">
+		<script src="window.js"></script>
+		<link rel="icon" href="favicon.png"/>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td><p>Event:</p></td>
+				<td colspan="2"><input id="event" value="Event"></input></td>
+				<td><input id="at" value="@"></input></td>
+				<td><space></space></td>
+				<td><p>Time</p></td>
+				<td><p>Relative</p></td>
+			</tr>
+			<tr>
+				<td><p>Day:</p></td>
+				<td><input type="number" id="day" min="1"></td>
+				<td>
+					<select id="month">
+						<option value="Jan">01</option>
+						<option value="Feb">02</option>
+						<option value="Mar">03</option>
+						<option value="Apr">04</option>
+						<option value="May">05</option>
+						<option value="Jun">06</option>
+						<option value="Jul">07</option>
+						<option value="Aug">08</option>
+						<option value="Sep">09</option>
+						<option value="Oct">10</option>
+						<option value="Nov">11</option>
+						<option value="Dec">12</option>
+					</select>
+				</td>
+				<td><input type="number" id="year" min='1970'></input></td>
+				<td><space></space></td>
+				<td>
+					<select id="incTime">
+						<option value="F">Yes</option>
+						<option value="D">No</option>
+					</select>
+				</td>
+				<td>
+					<select id="incRel">
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><p>Time:</p></td>
+				<td><input type="number" id="hour" min='0'></input></td>
+				<td><p>:</p></td>
+				<td><input type="number" id="minute" min='0'></input></td>
+			</tr>
+			<tr>
+				<td><p>Zone:</p></td>
+				<td><p>UTC</p></td>
+				<td>
+					<select id="tid">
+						<option value="+">+</option>
+						<option value="-">-</option>
+					</select>
+				</td>
+				<td><input type="number" id="time" min="0" max="12"></input></td>
+			</tr>
+			<tr>
+				<td colspan="2"><button onclick="document.getElementById('out').value=getMSG()">Generate!</button></td>
+				<td colspan="2"><button onclick="reset()">Reset all</button></td>
+			</tr>
+			<tr><td><br/></td></tr>
+			<tr>
+				<td><p>Output:</p></td>
+				<td colspan="6"><input id="out"></input></td>
+			</tr>
+		</table>
+	</body>
+</html>
