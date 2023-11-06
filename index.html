@@ -73,13 +73,19 @@
 				<td><input type="number" id="time" min="0" max="12"></input></td>
 			</tr>
 			<tr>
-				<td colspan="2"><button onclick="document.getElementById('out').value=getMSG()">Generate!</button></td>
+				<td colspan="2"><button onclick="getMSG()">Generate!</button></td>
 				<td colspan="2"><button onclick="reset()">Reset all</button></td>
 			</tr>
 			<tr><td><br/></td></tr>
 			<tr>
 				<td><p>Output:</p></td>
 				<td colspan="6"><input id="out"></input></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td><p>Preview:</p></td>
+				<td style="width:max-content"><div id="view"></div></td>
 			</tr>
 		</table>
 	</body>
