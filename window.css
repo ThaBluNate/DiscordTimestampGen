@@ -1,11 +1,10 @@
 *{
-    background-color:#313338;
     color:#dbdee1;
     font-size:1em;
-    font-family:Calibri
 }
 
 select,input,p,button,space{
+    font-family:Calibri;
     width:40pt;
     text-align:center;
     border:none;
@@ -25,11 +24,12 @@ select,input,p,button,space{
 
 button:hover{background-color:#444}
 #out,#event {width:100%;padding:4px 0}
-img:active  {animation:.2s linear copyanim}
-img:hover   {filter:drop-shadow(0 0 1rem #fff)}
+img:active  {animation:.2s linear copyanim forwards}
+img:hover   {filter:drop-shadow(0 0 3px #fff)}
 button      {width:100%}
 space       {background-color:#0000}
-span        {font-family:gg;font-weight:normal}
+html        {background-color:#313338}
+span        {font-family:gg}
 td          {width:40pt}
 p           {background-color:#444}
 
@@ -39,8 +39,8 @@ input[type=number]{-moz-appearance:textfield;appearance:textfield}
 
 
 @keyframes copyanim {
-    from{filter:drop-shadow(0 0 1rem #0f0)}
-    to{filter:none}
+    from{filter:drop-shadow(0 0 3px #0f0)}
+    to{filter:drop-shadow(0 0 7px #0f0)}
 }
 
  @font-face {
