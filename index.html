@@ -15,7 +15,7 @@
 				<td colspan="2"><input id="event" value="Event"></input></td>
 				<td><input id="at" value="@"></input></td>
 				<td><space></space></td>
-				<td><p>Time</p></td>
+				<td><p>Format</p></td>
 				<td><p>Mode</p></td>
 			</tr>
 			<tr>
@@ -40,9 +40,11 @@
 				<td><input type="number" id="year" min='1970'></input></td>
 				<td><space></space></td>
 				<td>
-					<select id="incTime">
-						<option value="F">Yes</option>
-						<option value="D">No</option>
+					<select id="fmt">
+						<option value="F">Full</option>
+						<option value="f">Time</option>
+						<option value="D">Long</option>
+						<option value="d">Tiny</option>
 					</select>
 				</td>
 				<td>
