@@ -1,13 +1,13 @@
-*{background-color:#333;color:#ddd;font-size:1em;font-family:Calibri}
+*{background-color:#313338;color:#dbdee1;font-size:1em;font-family:Calibri}
 td{width:40pt}
 select,input,p,button,space{width:40pt;text-align:center;border:none;background-color:#222;border-radius:5px;margin:0;padding:4px}
 button:hover{background-color:#444}
 button{width:100%}
 p{background-color:#444}
-space{background-color:#333}
+space{background-color:#0000}
 span{font-family:gg;font-weight:normal}
 #out,#event{width:100%;padding-right:0;padding-left:0}
-.ts{background-color:#393b41;border-radius:5px;padding-left:2px;padding-right:2px}
+.ts{background-color:#3d3f46;border-radius:5px;padding-left:2px;padding-right:2px}
 input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 input[type=number]{-moz-appearance:textfield;appearance:textfield}
 img:hover{filter:drop-shadow(0 0 1rem #fff)}
